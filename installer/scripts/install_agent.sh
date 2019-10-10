@@ -13,8 +13,8 @@ BUNDLE_X86="omsagent-1.11.0-9.universal.x86.sh"
 # Download, install, and onboard OMSAgent for Linux, depending on architecture of machine
 if [ $(uname -m) = 'x86_64' ]; then
     # x64 architecture
-    sh ./${BUNDLE_X64} --install
+    sh ./${BUNDLE_X64} --upgrade
 else
     # x86 architecture
-    sh ./${BUNDLE_X64} --install
+    sh ./${BUNDLE_X64} --upgrade
 fi
